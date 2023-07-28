@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Timilehin">
+    <meta name="description" content="This page contains all the things i am learning">
+    <title>My First Web Page</title>
+    <link rel="icon" href="1532556.png" type="image/x-icon">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+     <h1>My Goals for the year</h1>
+
+     <hr>
+     <main>
+     <nav>
+      <ul>
+        <li>
+            <a href="#html">Learning HTML</a>
+        </li>
+
+        <li>    
+           <a href="#vacation">Planning a vacation</a>
+          <figure>
+            <img src="/img/screenshot.png" alt="screen" width="300" height="300" loading="lazy">
+
+            <figcaption>
+
+            </figcaption>
+
+          </figure>
+          
+        </li>
+
+      </ul>
+     </nav>
+
+      <hr>
+      
+    <section id="html">
+     <h2>I'm ready to learn HTML</h2>
+      <p>This is my first web page</p>
+
+     <h3>My Daily Schedule</h3>
+      <p>Let me tell you how:</p>
+        <br>...I learn more about web dev.
+        <br>...I plan out my schedule.
+        <br>...I use resources from MDN.
+        <abbr title="Obafemi Awolowo University"> <a href="https://oauife.edu.ng/">OAU</a> </abbr>
+
+      </section>
+
+      <hr>
+
+      <table> 
+        <caption>My daily schedule</caption>
+          <thread>
+            <tr>
+
+            </tr>
+          </thread>
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+        </tr>
+        <tr>
+          <td>
+            <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+          </td>
+          <td>Write Code</td>
+        </tr>
+
+        <tr>
+          <td>
+            <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+          </td>
+          <td>Study for other courses</td>
+        </tr>
+
+        <tr>
+          <td>Free Time</td>
+        </tr>
+
+      </table>
+
+      <section id="vacation">
+
+        <dl>
+
+          <dt>North Pole</dt>
+          <dd>I heard this is <strong>cold</strong>!</dd>
+
+          <figure>
+
+            <img src="/img/duda-review.jpg" alt="laptop" title="laptop" width="400" height="200" loading="lazy">
+            <figcaption>
+              Laptop Image
+            </figcaption>
+          </figure>
+
+          
+          <dt>South Pole</dt>
+          <dd>This is also cold</dd>
+        </dl>
+        
+        <details>
+          <summary>Guess what</summary>
+          <p>I got myseelf a new car</p>
+        </details>
+        
+
+      </section>
+
+      <article id="contact">
+        <h2>Contact me</h2>
+        <p>I'd really like to hear from you</p>
+
+        <form action="https://httpbin.org/get" method="get">
+
+
+          <fieldset>
+            <legend>Personal Info</legend>
+          <p>
+            <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on">
+          </p>
+          
+          <p>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Jones" autocomplete="on">
+          </p>
+
+          <p>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="your secreet" required>
+          </p>
+
+          <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="000 000 0000" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
+          </p>
+        </fieldset>
+
+
+        <hr>
+
+        <fieldset>
+          
+          <legend>Do you have pets?</legend>
+          <p>
+            <input type="checkbox" name="pets" id="dog" value="dog">
+            <label for="dog">Dog</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="cat" value="cat">
+            <label for="cat">Cat</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="fish" value="fish">
+            <label for="fish">Fish</label>
+          </p>
+          <p>
+            <input type="checkbox" name="pets" id="otherPet" value="otherPets">
+            <label for="otherPets">Other</label>
+          </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>Send Me A Note</legend>
+          <label for="message">Your Message</label>
+          <br>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        <button type="reset">Reset</button>
+
+
+        <hr>
+          <p>
+            <label for="decade">Favourite Decade</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2023" step="10" value="1980">
+          </p>
+
+          <p>
+            <label for="coffee">Favorite Coffee</label>
+            <select name="coffee" id="coffee">
+              <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="iced coffee">Iced Coffee</option>
+              </optgroup>
+              <optgroup label="Espresso Drinks">
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="cortado">Cortado</option>
+                <option value="americano">Americano</option>
+              </optgroup>
+              <option value="other">Other</option>             
+            </select>
+          </p>
+
+          <!-- <label for="coffee">Favorite Coffee:</label>
+          <input type="text" name="coffee" id="coffee" list="coffee-list">
+          <datalist id="coffee-list">
+                <option value="coffee">
+                <option value="latte">
+                <option value="espresso">
+                <option value="cappuccino">
+                <option value="cortado">
+                <option value="americano">
+                <option value="other">         
+            </select> -->
+
+        </form>
+      </article>
+
+  </main>
+        <hr>
+      <footer>
+        &lt;&lt;&lt;&copy; <a href="about.html">Timmy </a> &gt;&gt;&gt;
+        <p><a href="#">Back to top</a></p>
+      </footer>
+</body>
+
+</html>
+
+
+
+
+
+
